@@ -252,7 +252,7 @@ p{
 }
 
 .blog{
-    padding: 100px 0;
+    padding: 100px 0px;
     text-align: center;
 }
 
@@ -297,4 +297,117 @@ p{
     color: #c5c5c5;
     display: block;
     margin-bottom: 15px;
+}
+
+/*MENU RESPONSIVE*/
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .headerContenido{
+        padding:  100px 30px;
+    }
+
+    .headerContenido p{
+        padding: 0;
+    }
+
+    .section1{
+        padding: 0;
+    }
+
+    .section1Contenido h2{
+        padding: 0;
+    }
+
+    .txt-p{
+        padding: 0;
+    }
+    
+    .piedraGrupo{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .piedraImg{
+        display: none;
+    }
+
+    .productos{
+        padding: 30px;
+    }
+
+    .productosContenido p{
+        padding: 0;
+    }
+
+    .productosGrupo{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .productos1{
+        margin-bottom: 25px;
+    }
+
+    .general{
+        flex-direction: column;
+    }
+
+    .general1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general2, .general3{
+        display: none;
+    }
+
+    .blog{
+        padding: 30px;
+    }
+
+    .blogContenido{
+        flex-direction: column;
+    }
+
+    .blog1{
+        padding: 0;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footerContenido{
+        flex-direction: column;
+        text-align: center;
+    }
 }
