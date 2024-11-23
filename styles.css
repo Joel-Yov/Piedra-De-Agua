@@ -102,6 +102,7 @@ body{
     background-color: #ce967b;
     color: #f9fafc;
     text-transform: uppercase;
+    border-radius: 30px;
 }
 
 .boton1:hover{
@@ -202,7 +203,7 @@ body{
 }
 
 .productos1 img{
-    width: 25px;
+    width: 90px;
     margin-bottom: 15px;
 }
 
@@ -222,7 +223,7 @@ body{
 }
 
 .general .general2{
-    background-image: url(images/coffe-1.jpg);
+    background-image: url(images/vision.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,7 +231,7 @@ body{
 }
 
 .general .general3{
-    background-image: url(images/coffee-2.jpg);
+    background-image: url(images/mision.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,7 +267,7 @@ p{
 }
 
 .blog1 img{
-    width: 250px;
+    width: 300px;
     border-radius: 20px;
     margin-bottom: 15px;
 }
