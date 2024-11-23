@@ -14,5 +14,287 @@ body{
 } 
 
 .Contenedor{
-    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce967b;
+}
+
+#menu{
+    display: none;
+}
+
+.menuIcono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.headerContenido{
+    text-align: center;
+}
+
+.headerContenido h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.headerContenido p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.boton1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+}
+
+.boton1:hover{
+    background-color: #ebad8d;
+}
+
+.section1{
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.section1Contenido{
+    text-align: center;
+}
+
+.section1Contenido h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.piedraGrupo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.piedra1{
+    padding: 25px;
+}
+
+.piedra1 img{
+    width: 200px;
+}
+
+.piedraImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.piedra1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.productos{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.productosContenido{
+    text-align: center;
+}
+
+.productosContenido h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.productosContenido p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.productosGrupo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.productos1{
+    padding: 0 100px;
+}
+
+.productos1 img{
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.productos1 h3{
+    color: #eaccb3;
+    font-size: 18px;
+}
+
+.general{
+    display: flex;
+}
+
+.general1{
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+}
+
+.general .general2{
+    background-image: url(images/coffe-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general .general3{
+    background-image: url(images/coffee-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blogContenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog1{
+    padding: 15px 55px;
+}
+
+.blog1 img{
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.blog1 h3{
+    font-size: 25px;
+    color: #323337;
+}
+
+.footer{
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footerContenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 18px;
+    color: #f9fafc;
+    margin-bottom: 15px;
+}
+
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
 }
