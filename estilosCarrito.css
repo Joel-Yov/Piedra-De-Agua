@@ -290,3 +290,42 @@ img{
 .hidden{
     display: none;
 }
+
+
+/* Contenedor del botón */
+.botonCompra {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    margin-bottom: 35px;
+}
+
+/* Botón de procesar pedido */
+#procesar-pedido {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+/* Cambia el color al pasar el mouse */
+#procesar-pedido:hover {
+    background-color: #0056b3; 
+
+}
+
+/* Efecto al hacer clic */
+#procesar-pedido:active {
+    transform: scale(0.95); 
+}
+
+/* Ocultar el botón con la clase hidden */
+.hidden {
+    display: none;
+}

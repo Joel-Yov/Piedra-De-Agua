@@ -18,11 +18,10 @@ const productsList = document.querySelector('.container-items');
 let allProducts = [];
 
 const valorTotal = document.querySelector('.total-pagar');
-
 const countProducts = document.querySelector('#contador-productos');
-
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
+const btnProcesarPedido = document.querySelector('#procesar-pedido'); // Botón de procesar pedido
 
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
@@ -65,22 +64,22 @@ rowProduct.addEventListener('click', e => {
 			product => product.title !== title
 		);
 
-		console.log(allProducts);
-
 		showHTML();
 	}
 });
 
-// Funcion para mostrar  HTML
+// Función para mostrar HTML
 const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
 		rowProduct.classList.add('hidden');
 		cartTotal.classList.add('hidden');
+		btnProcesarPedido.classList.add('hidden'); // Oculta el botón si no hay productos
 	} else {
 		cartEmpty.classList.add('hidden');
 		rowProduct.classList.remove('hidden');
 		cartTotal.classList.remove('hidden');
+		btnProcesarPedido.classList.remove('hidden'); // Muestra el botón si hay productos
 	}
 
 	// Limpiar HTML
