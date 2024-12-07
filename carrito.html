@@ -1,40 +1,172 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="productos.css">
-  <link rel="stylesheet" href="carrito.css">
-	<script src="./js/bicicletas.js"></script>
-  <script src="./js/cartService.js" defer></script>
-	<script src="./js/cart.js" defer></script>
-	<title>Bicicletas puntoJson - Carrito</title>
-</head>
-<body>
-  <header>
-    <br>
-		<nav>
-			<a href="index.html">INICIO</a>
-			<div>
-				<a href="./cart.html" id="cart"><img src="catalogo/shopping-cart.png" alt=""><span id="cuenta-carrito">0</span></a>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>TIENDA</title>
+		<link rel="stylesheet" href="estilosCarrito.css" />
+	</head>
+	<body>
+        <header class="header">
+            <div class="menu Contenedor">
+                <a href="#" class="logo">PIURA</a>
+                <input type="checkbox" id="menu"/>
+    
+                <label for="menu">
+                    <img src="images/menu.png" class="menuIcono" alt="menuHamburger">
+                </label>
+    
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="#">Iniciar Sesion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		<section class="headerCar boxCar">
+			<h1>NUESTROS PRODUCTOS</h1>
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
 			</div>
-		</nav>
-    <br>
-	</header>
-	<main>
-		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="./index.html">elige algunos productos</a></p>
-		<section id="cart-container">
 		</section>
-  <section id="totales">
-    <p>Total unidades: <span id="cantidad">0</span></p>
-    <p>Total precio: $<span id="precio">0</span></p>
-    <button disabled>Comprar</button>
-    <button id="reiniciar">Reiniciar</button>
-  </section>
-</main>
-	<footer>
-        <p>"Construyendo confianza, calidad y futuro juntos."</p>
-	</footer>
-</body>
+		<div class="container-items boxCar">
+			<div class="item">
+				<figure>
+					<img
+						src="catalogo/productos/1.JPG"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>GRAVA</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                    src="catalogo/productos/2.JPG"
+                    alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>ARENA DE MÉDANO</h2>
+					<p class="price">$40</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                        src="catalogo/productos/3.JPG"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>CONFITILLO</h2>
+					<p class="price">$60</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                        src="catalogo/productos/4.JPG"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>PIEDRA CHANCADA</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+                        src="catalogo/productos/5.JPG"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HORMIGÓN</h2>
+					<p class="price">$100</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+                        src="catalogo/productos/6.JPG"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>CONCRETO</h2>
+					<p class="price">$120</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="carrito.js"></script>
+	</body>
 </html>
